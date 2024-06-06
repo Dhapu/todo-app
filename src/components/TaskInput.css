@@ -1,0 +1,29 @@
+/* TaskInput.css */
+.add-task-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+  
+  .add-task-container .MuiTextField-root {
+    flex-grow: 1;
+  }
+  
+  .add-task-container .MuiButton-root {
+    height: 56px; /* Align with TextField height */
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 600px) {
+    .add-task-container {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .add-task-container .MuiTextField-root,
+    .add-task-container .MuiButton-root {
+      width: 100%;
+    }
+  }
+  

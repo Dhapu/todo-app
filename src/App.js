@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Container, Typography, Box } from '@mui/material';
+import TaskInput from './components/TaskInput';
+import TaskList from './components/TaskList';
+import './App.css'; // Import the CSS file
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <Container className="container">
+            <Box className="header">
+                <Typography variant="h4" gutterBottom>
+                    To-Do App
+                </Typography>
+            </Box>
+            <TaskInput />
+            <Box className="task-list">
+                <TaskList />
+            </Box>
+        </Container>
+    );
+};
 
 export default App;

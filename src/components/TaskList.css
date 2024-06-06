@@ -1,0 +1,38 @@
+/* TaskList.css */
+.task-list {
+    margin-top: 1.5rem;
+}
+
+.list-item {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-box {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.edit-box .MuiTextField-root {
+    flex-grow: 1;
+}
+
+.edit-box .MuiButton-root {
+    height: 56px; /* Align with TextField height */
+}
+
+.list-item-text {
+    flex-grow: 1;
+}
+
+.list-item-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
